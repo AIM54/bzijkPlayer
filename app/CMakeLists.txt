@@ -206,13 +206,6 @@ add_library(ijkffmpeg-lib
 set_target_properties(ijkffmpeg-lib
         PROPERTIES IMPORTED_LOCATION
         libijkffmpeg.so)
-#sdl
-add_library(ijksdl-lib
-        SHARED
-        IMPORTED)
-set_target_properties(ijksdl-lib
-        PROPERTIES IMPORTED_LOCATION
-        libijksdl.so)
 
 find_library(log-lib log)
 find_library(m-lib m)
