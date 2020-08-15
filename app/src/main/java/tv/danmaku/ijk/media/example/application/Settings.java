@@ -48,7 +48,7 @@ public class Settings {
         try {
             return Integer.valueOf(value).intValue();
         } catch (NumberFormatException e) {
-            return  Settings.PV_PLAYER__IjkExoMediaPlayer;
+            return  Settings.PV_PLAYER__IjkMediaPlayer;
         }
     }
 
@@ -69,7 +69,7 @@ public class Settings {
 
     public boolean getUsingOpenSLES() {
         String key = mAppContext.getString(R.string.pref_key_using_opensl_es);
-        return mSharedPreferences.getBoolean(key, false);
+        return mSharedPreferences.getBoolean(key, true);
     }
 
     public String getPixelFormat() {
